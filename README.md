@@ -11,3 +11,4 @@
 "## Setup Instructions" 
 "1. npm install" 
 "2. Create .env file with MongoDB URI" 
+"3. npm start to run server" 
