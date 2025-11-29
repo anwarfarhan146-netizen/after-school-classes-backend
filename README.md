@@ -15,3 +15,4 @@
  
 "## Features" 
 "- REST API with Express.js" 
+"- MongoDB database integration" 
