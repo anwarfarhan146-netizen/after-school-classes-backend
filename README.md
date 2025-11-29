@@ -5,3 +5,5 @@
 "- POST /orders - Create new order" 
  
 "- PUT /lessons/:id - Update lesson spaces" 
+ 
+"- GET /search?q=term - Search lessons" 
