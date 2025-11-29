@@ -7,3 +7,6 @@
 "- PUT /lessons/:id - Update lesson spaces" 
  
 "- GET /search?q=term - Search lessons" 
+ 
+"## Setup Instructions" 
+"1. npm install" 
