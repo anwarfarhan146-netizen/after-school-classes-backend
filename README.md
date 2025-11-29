@@ -3,3 +3,5 @@
 "- GET /lessons - Returns all lessons" 
  
 "- POST /orders - Create new order" 
+ 
+"- PUT /lessons/:id - Update lesson spaces" 
