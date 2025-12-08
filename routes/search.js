@@ -1,3 +1,4 @@
+// Full-text search across lesson fields
 const express = require('express');
 const router = express.Router();
 const { getDatabase } = require('../config/database');
