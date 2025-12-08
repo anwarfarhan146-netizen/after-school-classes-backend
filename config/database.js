@@ -1,5 +1,6 @@
 const { MongoClient } = require('mongodb');
 
+// Database connection variables
 let dbConnection;
 let client;
 
