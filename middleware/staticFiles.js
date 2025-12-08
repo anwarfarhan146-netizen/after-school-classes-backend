@@ -1,3 +1,4 @@
+// Static file middleware to serve images from /public/images
 const fs = require('fs');
 const path = require('path');
 
