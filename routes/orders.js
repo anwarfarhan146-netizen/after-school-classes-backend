@@ -9,6 +9,7 @@ router.post('/', async (req, res) => {
     const db = getDatabase();
     if (!db) return res.status(500).json({ error: 'Database not connected' });
 
+    // Extract fields from client request body
     const { name, phone, lessonIDs, spaces } = req.body;
     if (!name || !phone || !lessonIDs || !spaces) {
       return res.status(400).json({ error: 'Missing required fields', message: 'Name, phone, lessonIDs, and spaces are required' });
