@@ -3,6 +3,7 @@ const router = express.Router();
 const { getDatabase } = require('../config/database');
 const { ObjectId } = require('mongodb');
 
+// POST new order - stores customer purchase in database
 router.post('/', async (req, res) => {
   try {
     const db = getDatabase();
