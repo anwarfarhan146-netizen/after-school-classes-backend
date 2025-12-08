@@ -4,11 +4,11 @@ const express = require('express');
 const cors = require('cors');
 const { connectToDatabase, closeDatabase } = require('./config/database');
 
-// Import middleware
+// Imports middleware
 const logger = require('./middleware/logger');
 const staticFiles = require('./middleware/staticFiles');
 
-// Import routes
+// Imports routes
 const lessonsRoutes = require('./routes/lessons');
 const ordersRoutes = require('./routes/orders');
 const searchRoutes = require('./routes/search');
@@ -92,11 +92,10 @@ connectToDatabase((err) => {
   });
 });
 
-// Shutdown
+// Clean Shutdown
 process.on('SIGINT', () => {
   console.log('\n🛑 Shutting down server...');
   closeDatabase();
   process.exit(0);
 });
-
 module.exports = app;
