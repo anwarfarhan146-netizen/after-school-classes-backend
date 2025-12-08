@@ -8,6 +8,7 @@ function convertLessonForJson(lesson) {
   return { ...lesson, _id: lesson._id ? lesson._id.toString() : undefined };
 }
 
+// GET all lessons from the database
 router.get('/', async (req, res) => {
   try {
     const db = getDatabase();
