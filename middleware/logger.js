@@ -1,4 +1,5 @@
-// Logger middleware
+// Logger middleware - prints all incoming requests
+
 function logger(req, res, next) {
   const timestamp = new Date().toISOString();
   const method = req.method;
